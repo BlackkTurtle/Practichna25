@@ -1,0 +1,83 @@
+<p class="Task">Task1</p>
+<div>
+  <p>{{petrostate.name}}</p>
+  <p>{{petrostate.surname}}</p>
+  <p>{{petrostate.age}}</p>
+</div>
+
+<p class="Task">Task2</p>
+<div>
+  {{petrostate.name}} {{petrostate.surname}},{{petrostate.age}} years
+</div>
+
+<p class="Task">Task3</p>
+<div>
+  <ul>
+    <li *ngFor="let pl of proglang;">
+      {{pl}}
+    </li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li> Варшава: {{langs[0]}}</li>
+	<li> Вільнюс: {{langs[1]}}</li>
+	<li> Київ: {{langs[2]}}</li>
+  </ul>
+</div>
+
+<p class="Task">Task4</p>
+<div>
+  <ul>
+    <li *ngFor="let worker of workers">
+      Ім'я: {{worker.name}}, вік: {{worker.age}}, зарплата: {{worker.salary}}
+    </li>
+  </ul>
+</div>
+
+<p class="Task">Task5</p>
+<div>
+  <p>{{name}}</p>
+<a href="#" (click)="changeName()">Змінити ім'я</a>
+</div>
+
+<p class="Task">Task6</p>
+  <div>
+    <p>Name: {{name1}}</p>
+    <p>Surname: {{surname}}</p>
+    <p>Age: {{age}}</p>
+
+    <button (click)="changeName1()">Change Name</button>
+    <button (click)="changeSurname()">Change Surname</button>
+    <button (click)="changeAge()">Change Age</button>
+</div>
+
+<p class="Task">Task7</p>
+<div>
+  <ul>
+    <li *ngFor="let language of languages">{{ language }}</li>
+  </ul>
+  <button (click)="changeLanguage()">Change last language</button>
+</div>
+
+<p class="Task">Task8</p>
+<ul>
+  <li *ngFor="let lang of languages">{{ lang }}</li>
+</ul>
+
+<button (click)="addLang()">Додати мову</button>
+
+<p class="Task">Task9</p>
+<ul>
+  <li *ngFor="let lang of languages">{{ lang }}</li>
+</ul>
+
+<button (click)="addFirstLang()">Додати мову</button>
+
+<p class="Task">Task10-11</p>
+<ul>
+  <li *ngFor="let lang of languages">
+    {{lang}}
+    <button (click)="deleteLang(lang)">Delete</button>
+  </li>
+</ul>
